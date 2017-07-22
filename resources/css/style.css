@@ -1,0 +1,88 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* navigation section */
+.navbardesktop {
+  position: fixed;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.navbardesktop p {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: dimgray;
+  }
+
+.navbardesktop p #logotext2{
+    font-weight: 400;
+    color: darkgray;
+    }
+
+nav {
+  margin-right: 0.5rem;
+  }
+
+ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  }
+
+ul li:hover {
+  text-decoration: underline;
+  }
+
+.navbarmobile {
+  position: fixed;
+  display: none;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.navbarmobile img:hover{
+  border-bottom: 1px solid black;
+  }
+
+@media screen and (max-width: 600px) {
+  .navbardesktop {
+    display: none;
+    }
+
+  .navbarmobile {
+    display: flex;
+  }
+}
+
+/* banner section */
+
+
+
+/* article section */
+
+
+
+/* course section */
+
+
+
+/* thesis section */
+
+
+
+/* footer section */

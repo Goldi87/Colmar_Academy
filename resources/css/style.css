@@ -4,76 +4,201 @@ html {
 }
 
 /* navigation section */
+
 .navbardesktop {
-  position: fixed;
-  display: flex;
-  height: 4rem;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  }
-
-.logo {
-  display: flex;
-  align-items: center;
-  margin-left: 1.5rem;
-}
-
-.navbardesktop p {
-  display: inline-block;
-  font-family: "Oswald";
-  font-weight: 700;
-  text-transform: uppercase;
-  color: dimgray;
-  }
-
-.navbardesktop p #logotext2{
-    font-weight: 400;
-    color: darkgray;
-    }
-
-nav {
-  margin-right: 0.5rem;
-  }
-
-ul li {
-  display: inline-block;
-  margin: 0 0.5rem;
-  }
-
-ul li:hover {
-  text-decoration: underline;
+  display: none;
   }
 
 .navbarmobile {
-  position: fixed;
-  display: none;
+  display: flex;
   height: 4rem;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #E5E5E5;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
 }
 
 .navbarmobile img:hover{
   border-bottom: 1px solid black;
   }
 
-@media screen and (max-width: 600px) {
+
+/*
+.colum1 img{
+  display: none;
+  }
+
+.banner .colum1 {
+  width: auto;
+  height: 11.25rem;
+  background-color: grey;
+}
+
+.banner .colum2 {
+  width: auto;
+  background-color: lightgrey;
+}
+
+h1{
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: dimgray;
+  padding: 1rem 1rem 1em 1rem;
+  }
+
+h3{
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: dimgray;
+  padding: 1rem 1rem 1em 1rem;
+  }
+
+.button {
+  padding: 1rem 0;
+  background-color: #D14130;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5rem 1rem 2em 1rem;
+  }
+*/
+
+@media screen and (min-width: 800px) {
+
+  /* navigation section */
   .navbardesktop {
-    display: none;
+    position: fixed;
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+  .navbardesktop p {
+    display: inline-block;
+    font-family: "Oswald";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: dimgray;
+    }
+
+  .navbardesktop p #logotext2{
+      font-weight: 400;
+      color: darkgray;
+      }
+
+  nav {
+    margin-right: 0.5rem;
+    }
+
+  ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    }
+
+  ul li:hover {
+    text-decoration: underline;
     }
 
   .navbarmobile {
+    position: fixed;
+    display: none;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+  /* banner section */
+
+  .banner {
     display: flex;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
   }
+
+  .colum1 {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    margin: 6rem 2.5rem 2rem 1.5rem;
+    overflow: hidden;
+  }
+
+  .colum1 img{
+    display: inline-block;
+    width: 100%;
+    }
+
+  .colum2 {
+    display: flex;
+    width: 25%;
+    margin: 6rem 0rem 0rem 0rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    }
+
+  .colum2 h1{
+    font-family: "Roboto";
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: dimgray;
+    margin: 0 0 1em 0;
+    }
+
+  .colum2 h3{
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: dimgray;
+    margin: 0 0 1em 0;
+    }
+
+  .button {
+    padding: 1rem 0;
+    background-color: #D14130;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    }
+
+  .button a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    }
+
 }
 
-/* banner section */
 
 
 
-/* article section */
+
+
+/* information section */
 
 
 

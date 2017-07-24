@@ -3,60 +3,152 @@ html {
   font-size: 16px;
 }
 
-/* navigation section */
-
-.navbardesktop {
-  display: none;
-  }
-
-.navbarmobile {
-  display: flex;
-  height: 4rem;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #F1F1F1;
-  border-bottom: 1px solid #E5E5E5;
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
 }
 
-.navbarmobile img:hover{
-  border-bottom: 1px solid black;
-  }
-
-
-/*
-.colum1 img{
-  display: none;
-  }
-
-.banner .colum1 {
-  width: auto;
-  height: 11.25rem;
-  background-color: grey;
-}
-
-.banner .colum2 {
-  width: auto;
-  background-color: lightgrey;
-}
-
-h1{
+h1 {
   font-family: "Roboto";
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.2;
-  color: dimgray;
-  padding: 1rem 1rem 1em 1rem;
+  color: #222;
   }
 
-h3{
+h2 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 900;
+  color: #222;
+  text-align: center;
+  padding: 32px auto;
+  }
+
+h3 {
   font-family: "Roboto";
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.1;
+  color: #222;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+h5 {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222;
+  line-height: 2;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #222;
+}
+
+/* navigation section */
+.navbardesktop {
+  position: fixed;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #E5E5E5;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.navbardesktop p {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
   color: dimgray;
-  padding: 1rem 1rem 1em 1rem;
+  }
+
+.navbardesktop p #logotext2{
+    font-weight: 400;
+    color: darkgray;
+    }
+
+nav {
+  margin-right: 0.5rem;
+  }
+
+ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  }
+
+a:hover {
+  text-decoration: underline;
+  }
+
+.navbarmobile {
+  position: fixed;
+  display: none;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  }
+
+/* banner section */
+.banner {
+  display: flex;
+  top: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.colum1 {
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  margin: 6rem 2.5rem 2rem 1.5rem;
+  overflow: hidden;
+}
+
+.colum1 img{
+  display: inline-block;
+  width: 100%;
+  }
+
+.colum2 {
+  display: flex;
+  width: 423px;
+  margin: 6rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  flex-direction: column;
+  }
+
+.colum2 h1{
+  margin: 0 0 1em 0;
+  }
+
+.colum2 h3{
+  margin: 0 0 1em 0;
   }
 
 .button {
@@ -65,115 +157,207 @@ h3{
   color: white;
   text-decoration: none;
   text-align: center;
-  margin: 0.5rem 1rem 2em 1rem;
+  margin: 0;
   }
-*/
 
-@media screen and (min-width: 800px) {
+.button a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  }
+
+/* information section */
+.information {
+  display: flex;
+  width: 100%;
+  background-color: white;
+
+}
+
+.mainarticle {
+  width: 60%;
+  padding: 2rem 1.5rem;
+
+  border-right: 1px solid #E5E5E5;
+}
+
+.mainarticle img{
+  width: 100%;
+  }
+
+.articlelist {
+  width: 423px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article .image {
+  width: 35%;
+  margin: 0 16px;
+  }
+
+.article img {
+  width: 100%;
+  height: auto;
+  }
+
+.article {
+  display: flex;
+  height: 168px;
+  align-items: center;
+  }
+
+.article h4, p, a{
+  margin: 0.25rem 0 0.25rem 0rem;
+}
+
+/*.article:first-child {
+  padding: 2rem 1rem 1rem 1rem;
+}*/
+
+.article:hover {
+  background-color: #F1F1F1;
+}
+
+/* course section */
+.coursesection {
+background-color: #F3F5F5;
+width: 100%;
+
+}
+
+.coursegrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  width: 25%;
+  background-color: white;
+  margin: 16px;
+}
+
+.coursegrid:nth-child(-n+3) {
+  margin: 16px 16px 32px 16px;
+}
+
+.coursegrid:nth-child(n+4) {
+  margin: 32px 16px 16px 16px;
+}
+
+.course img{
+  width: 100%;
+}
+
+.course h5 {
+  padding: 8px 0px;
+}
+
+.coursetext{
+  margin: 16px 16px 24px 16px;
+}
+
+/* thesis section */
+.thesis {
+  width: 100%;
+  margin: 32px 24px 32px 24px;
+}
+
+.thesiscontent {
+  display: flex;
+  width: 100%;
+}
+
+.video {
+  width: 60%;
+}
+
+.article .image {
+  width: 35%;
+  margin: 0 16px;
+  }
+
+.article img {
+  width: 100%;
+  height: auto;
+  }
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  height: 2rem;
+  background-color: #F1F1F1;
+  border-top: 1px solid #E5E5E5;
+  }
+
+footer a {
+  display: inline-block;
+  text-align: right;
+  }
+
+footer p {
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
 
   /* navigation section */
   .navbardesktop {
-    position: fixed;
-    display: flex;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F1F1F1;
-    border-bottom: 1px solid #E5E5E5;
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-    }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 1.5rem;
-  }
-
-  .navbardesktop p {
-    display: inline-block;
-    font-family: "Oswald";
-    font-weight: 700;
-    text-transform: uppercase;
-    color: dimgray;
-    }
-
-  .navbardesktop p #logotext2{
-      font-weight: 400;
-      color: darkgray;
-      }
-
-  nav {
-    margin-right: 0.5rem;
-    }
-
-  ul li {
-    display: inline-block;
-    margin: 0 0.5rem;
-    }
-
-  ul li:hover {
-    text-decoration: underline;
+    display: none;
     }
 
   .navbarmobile {
-    position: fixed;
-    display: none;
+    display: flex;
     height: 4rem;
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  }
+
+  .navbarmobile img:hover{
+    border-bottom: 1px solid black;
     }
 
   /* banner section */
-
-  .banner {
-    display: flex;
-    top: 100px;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: white;
-    border-bottom: 1px solid #E5E5E5;
-  }
-
-  .colum1 {
-    display: inline-block;
-    width: 60%;
-    height: auto;
-    margin: 6rem 2.5rem 2rem 1.5rem;
-    overflow: hidden;
-  }
-
+  /*
   .colum1 img{
-    display: inline-block;
-    width: 100%;
-    }
+    display: none;
+  }
 
-  .colum2 {
-    display: flex;
-    width: 25%;
-    margin: 6rem 0rem 0rem 0rem;
-    box-sizing: border-box;
-    flex-direction: column;
-    }
+  .banner .colum1 {
+    width: auto;
+    height: 11.25rem;
+    background-color: grey;
+  }
 
-  .colum2 h1{
+  .banner .colum2 {
+    width: auto;
+    background-color: lightgrey;
+  }
+
+  h1{
     font-family: "Roboto";
     font-size: 2rem;
     font-weight: 900;
     line-height: 1.2;
     color: dimgray;
-    margin: 0 0 1em 0;
+    padding: 1rem 1rem 1em 1rem;
     }
 
-  .colum2 h3{
+  h3{
     font-family: "Roboto";
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.1;
     color: dimgray;
-    margin: 0 0 1em 0;
+    padding: 1rem 1rem 1em 1rem;
     }
 
   .button {
@@ -182,32 +366,33 @@ h3{
     color: white;
     text-decoration: none;
     text-align: center;
-    margin: 0;
+    margin: 0.5rem 1rem 2em 1rem;
+    }
+  */
+
+  /* information section */
+
+
+  /* course section */
+
+
+  /* thesis section */
+
+
+  /* footer section */
+
+  footer a {
+    display: none;
     }
 
-  .button a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    }
 
 }
-
-
-
-
 
 
 /* information section */
 
 
-
 /* course section */
 
 
-
 /* thesis section */
-
-
-
-/* footer section */

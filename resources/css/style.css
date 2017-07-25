@@ -14,7 +14,7 @@ h1 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.2;
-  color: #222;
+  color: white;
   }
 
 h2 {
@@ -31,7 +31,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #222;
+  color: white;
 }
 
 h4 {
@@ -118,7 +118,7 @@ a:hover {
   width: 100%;
   align-items: center;
   justify-content: flex-start;
-  background-color: white;
+  background-color: #2B2C3A;
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -166,12 +166,18 @@ a:hover {
   text-align: center;
   }
 
+.button {
+  padding: 1rem 0;
+  background-color: #D14130;
+  color: white;
+  }
+
 /* information section */
 .information {
   display: flex;
   width: 100%;
   background-color: white;
-
+  margin-bottom: 32px;
 }
 
 .mainarticle {
@@ -183,6 +189,21 @@ a:hover {
 
 .mainarticle img{
   width: 100%;
+  margin-bottom: 32px;
+  }
+
+.mainarticle h2{
+  margin-bottom: 24px;
+  text-align: left;
+  }
+
+.mainarticle p{
+  margin-bottom: 24px;
+  }
+
+.mainarticle .caption{
+  font-size: 12px;
+  margin-bottom: 0;
   }
 
 .articlelist {
@@ -193,12 +214,14 @@ a:hover {
 
 .article .image {
   width: 35%;
+  height: auto;
   margin: 0 16px;
   }
 
 .article img {
-  width: 100%;
+  width: 100%x;
   height: auto;
+
   }
 
 .article {
@@ -211,9 +234,6 @@ a:hover {
   margin: 0.25rem 0 0.25rem 0rem;
 }
 
-/*.article:first-child {
-  padding: 2rem 1rem 1rem 1rem;
-}*/
 
 .article:hover {
   background-color: #F1F1F1;
@@ -223,7 +243,10 @@ a:hover {
 .coursesection {
 background-color: #F3F5F5;
 width: 100%;
+}
 
+.coursesection ul li {
+  display: none;
 }
 
 .coursegrid {
@@ -236,6 +259,11 @@ width: 100%;
   width: 25%;
   background-color: white;
   margin: 16px;
+}
+
+.course:hover {
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+  border: 1px solid #E5E5E5;
 }
 
 .coursegrid:nth-child(-n+3) {
@@ -254,6 +282,10 @@ width: 100%;
   padding: 8px 0px;
 }
 
+.course h2 {
+  padding-top: 32px;
+}
+
 .coursetext{
   margin: 16px 16px 24px 16px;
 }
@@ -261,16 +293,25 @@ width: 100%;
 /* thesis section */
 .thesis {
   width: 100%;
-  margin: 32px 24px 32px 24px;
-}
+  }
 
 .thesiscontent {
   display: flex;
   width: 100%;
+
 }
 
 .video {
   width: 60%;
+  margin: 32px 24px 32px 24px;
+  }
+
+.thesistext {
+  margin: 24px 0 32px 0;
+}
+
+.thesistext p{
+  margin-top: 24px;
 }
 
 .article .image {
@@ -283,11 +324,15 @@ width: 100%;
   height: auto;
   }
 
+.thesis h3{
+  color: #222;
+}
+
 /* footer section */
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
   width: 100%;
   height: 2rem;
   background-color: #F1F1F1;
@@ -301,6 +346,7 @@ footer a {
 
 footer p {
   display: inline-block;
+  padding-left: 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -311,6 +357,7 @@ footer p {
     }
 
   .navbarmobile {
+    position: fixed;
     display: flex;
     height: 4rem;
     width: 100%;
@@ -319,6 +366,7 @@ footer p {
     background-color: #F1F1F1;
     border-bottom: 1px solid #E5E5E5;
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    z-index: 20;
   }
 
   .navbarmobile img:hover{
@@ -326,12 +374,23 @@ footer p {
     }
 
   /* banner section */
-  /*
+
   .colum1 img{
     display: none;
   }
 
+  .banner {
+    display: inline-block;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2B2C3A;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
   .banner .colum1 {
+    display: none;
     width: auto;
     height: 11.25rem;
     background-color: grey;
@@ -348,7 +407,7 @@ footer p {
     font-weight: 900;
     line-height: 1.2;
     color: dimgray;
-    padding: 1rem 1rem 1em 1rem;
+    padding: 1rem 1rem 0 1rem;
     }
 
   h3{
@@ -357,7 +416,7 @@ footer p {
     font-weight: 700;
     line-height: 1.1;
     color: dimgray;
-    padding: 1rem 1rem 1em 1rem;
+    padding: 0 1rem 0 1rem;
     }
 
   .button {
@@ -368,16 +427,41 @@ footer p {
     text-align: center;
     margin: 0.5rem 1rem 2em 1rem;
     }
-  */
+
 
   /* information section */
-
+  .mainarticle {
+    display: none;
+  }
 
   /* course section */
 
+  .coursegrid {
+    display: none;
+  }
+
+  .coursesection ul li {
+    display: block;
+    width: auto;
+    padding: 16px;
+    margin: 8px 16px;
+    background-color: grey;
+    color: white;
+    font-weight: 700;
+  }
 
   /* thesis section */
+  .thesistext {
+    display: none;
+  }
 
+  .thesiscontent .articlelist {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+  }
 
   /* footer section */
 
